@@ -15,13 +15,13 @@ classifier=pickle.load(pickle_in)
 
 @app.route('/')
 def welcome():
-    return "Welcome All"
+    return "Welcome All to Iris App"
 
 @app.route('/predict',methods=["Get"])
 def predict():
     
     """Let's predict the species of Iris flowers:[ 0: 'setosa',1: 'versicolor', 2: 'virginica' ]  
-  Using ml
+  Using Logistic Regression
     ---
     parameters:  
       - name: sepal_length
@@ -55,7 +55,7 @@ def predict():
     prediction=classifier.predict(input_data)
     #prediction=classifier.predict([[sepal_length, sepal_width, petal_length, petal_width]])
 
-    return "Hello The answer is"+str(prediction)
+    return "The predicted specie of iris flower is: "+str(prediction)
 
 
 
