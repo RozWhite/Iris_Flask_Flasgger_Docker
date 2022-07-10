@@ -5,6 +5,7 @@ git clone https://github.com/RozWhite/Iris_docker
 
 ## Run it locally 
 Run python app.py 
+
 Test the Api at http://localhost:5000/apidocs/
 
 ## Run with Docker
