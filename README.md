@@ -6,7 +6,7 @@ git clone https://github.com/RozWhite/Iris_docker
 ## Run it locally 
 Run: python app.py 
 
-Test the Api at http://localhost:5000/apidocs/
+Test the API at http://localhost:5000/apidocs/
 
 ## Run with Docker
 
@@ -19,6 +19,6 @@ docker image build -t iris_model .
 
 docker run -it --name iris_model --rm -p 5000:5000 iris_model
 
-You can then hit http://localhost:5000/apidocs/ to access iris running within the docker.
+You can then test the API at http://localhost:5000/apidocs/  within the docker
 
 
