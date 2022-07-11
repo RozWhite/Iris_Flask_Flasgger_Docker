@@ -1,7 +1,7 @@
-FROM continuumio/anaconda3:4.4.0
+FROM python:3.9.10-slim-buster
 COPY . /usr/app/
-ENV LISTEN_PORT=5000
-EXPOSE 5000
+ENV LISTEN_PORT=3000
+EXPOSE 3000
 WORKDIR /usr/app/
 RUN pip install -r requirements.txt
 CMD python app.py
