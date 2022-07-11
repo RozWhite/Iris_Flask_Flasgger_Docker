@@ -1,4 +1,4 @@
-# End-to-End ML application with Flask REST API- Flasgger- Docker  🐳
+# End-to-End ML application with Flask REST API- Flasgger- Docker 🐳
 
 ## Cloning the repo
 git clone https://github.com/RozWhite/Iris_docker

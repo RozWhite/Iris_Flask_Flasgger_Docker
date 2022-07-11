@@ -5,8 +5,6 @@ import pickle
 import pandas as pd
 from flasgger import Swagger
 
-
-
 app=Flask(__name__)
 Swagger(app)
 
@@ -56,7 +54,6 @@ def predict():
     prediction=classifier.predict(input_data)
 
     return "The predicted specie of iris flower is: "+str(prediction)
-
 
 if __name__=='__main__':
     app.run(host="0.0.0.0", port=3000,debug=True)
