@@ -15,13 +15,13 @@ You can use the docker file from here or just download the existing image from [
 docker pull rozitadocker123/ml_flask_docker
 ```
 
-1. To build the Docker image :
+To build the Docker image :
 ```
 docker image build -t iris_docker .
 ```
 
 
-2. To run the Docker image:
+To run the Docker image:
 ```
 docker run -it --name iris_docker--rm -p 3000:3000 iris_docker
 ```
