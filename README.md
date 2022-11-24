@@ -1,8 +1,8 @@
 # End-to-End ML application with Flask REST API- Flasgger- Docker 🐳
-Flask web app for predicting the species of Iris flower and Dockerize the existing Flask app.
-This repository can be a base for building an End-to-End Machine Learning App using Flask and running it with only Python or using Docker.  
+This project is about a Flask web app for predicting the species of Iris flower. It is an End-to-End ML application with Flask and containerize the App with Docker. The App can be run with only Python or using Docker. Docker is an open platform for running applications in an isolated environment, allowing us to more easily develop and deploy applications. The Docker container wraps up the entire code , which makes it portable.
 
-Flasgger helps to create a simple Frontend for ML application.
+For Testing the endpoints I used Flassgger. Flasgger helps to create a simple Frontend for ML application. 
+
 ## Cloning the repo
 git clone https://github.com/RozWhite/Iris_docker
 
@@ -26,8 +26,10 @@ docker image build -t iris_docker .
 
 To run the Docker image:
 ```
-docker run -it --name iris_docker--rm -p 3000:3000 iris_docker
+docker run -d --name iris_model --rm -p 3000:3000 iris_docker
 ```
 You can then test the API at <http://localhost:3000/apidocs/>  within the docker
 
+</br>
+<img src="iris.png"  height="400"/>
 

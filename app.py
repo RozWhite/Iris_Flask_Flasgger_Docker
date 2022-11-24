@@ -51,9 +51,10 @@ def predict():
     petal_width=request.args.get("petal_width")
 
     input_data=np.array([[sepal_length, sepal_width, petal_length, petal_width]], dtype=np.double)
-    prediction=classifier.predict(input_data)
+    label_dict = {0:'setosa', 1:'versicolor',2:'virginica'}
+    prediction=label_dict[int(classifier.predict(input_data))]
 
-    return "The predicted specie of iris flower is: "+str(prediction)
+    return "The predicted specie of iris flower is: "+prediction
 
 if __name__=='__main__':
     app.run(host="0.0.0.0", port=3000,debug=True)
